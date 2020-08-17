@@ -1,0 +1,19 @@
+{
+    "name": "adapt-walkgrove-dialogue",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/walkgrovedev/adapt-walkgrove-dialogue.git"
+    },
+    "framework": "5",
+    "version": "1.0.0",
+    "homepage": "https://github.com/walkgrovedev/adapt-walkgrove-dialogue.git",
+    "component": "dialogue",
+    "displayName": "Dialogue",
+    "description": "A conversational component",
+    "main": "/js/adapt-walkgrove-dialogue.js",
+    "keywords": [
+        "adapt-plugin",
+        "adapt-component"
+    ],
+    "license": "GPL-3.0"
+}

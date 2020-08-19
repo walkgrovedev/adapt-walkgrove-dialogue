@@ -53,6 +53,7 @@ define([
     onStartClicked: function() {
       this.$('.dialogue__main').addClass('is-visible');
       this.$('.dialogue__button').removeClass('is-visible');
+      this.$('.dialogue__instruction-inner').addClass('is-invisible');
 
       this.setupInview();
     },

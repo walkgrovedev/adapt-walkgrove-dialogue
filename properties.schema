@@ -29,6 +29,73 @@
       "validators": [],
       "help": "This is the instruction text",
       "translatable": true
+    },
+    "buttonText": {
+      "type": "string",
+      "required": true,
+      "translatable": true
+    },
+    "_characters": {
+      "type": "array",
+      "required": true,
+      "title": "Dialogue characters",
+      "items": {
+        "type": "object",
+        "required": true,
+        "properties": {
+          "name": {
+            "type": "string",
+            "required": true,
+            "default": "",
+            "title": "Character's display name",
+            "inputType": "Text",
+            "validators": [],
+            "help": "",
+            "translatable": true
+          },
+          "_image": {
+            "type": "string",
+            "required": true,
+            "default": "",
+            "title": "Character's image",
+            "inputType": "Text",
+            "validators": [],
+            "help": "",
+            "translatable": false
+          }
+        }
+      }
+    },
+    "_items": {
+      "type": "array",
+      "required": true,
+      "title": "Dialogue speech items",
+      "items": {
+        "type": "object",
+        "required": true,
+        "properties": {
+          "_character": {
+            "type": "number",
+            "required": true,
+            "default": 0,
+            "title": "Speech text",
+            "inputType": "Number",
+            "validators": ["required", "number"],
+            "help": "",
+            "translatable": false
+          },
+          "text": {
+            "type": "string",
+            "required": true,
+            "default": "",
+            "title": "Speech text",
+            "inputType": "Text",
+            "validators": [],
+            "help": "",
+            "translatable": true
+          }
+        }
+      }
     }
   }
 }

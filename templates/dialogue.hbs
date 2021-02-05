@@ -7,10 +7,10 @@
     </button>
   </div>
 
-  <div class="dialogue__main">
+  <div class="dialogue__main"> 
   {{#each _items}}
   <div class="dialogue__speech">
-    <img class="dialogue__character-image" src="{{{characterImage _character}}}" alt="" />
+    <img class="dialogue__character-image" src="{{{characterImage _character}}}" aria-hidden="true" alt="" />
     <div class="dialogue__character-content">
       <div class="dialogue__character-name">{{{characterName _character}}}</div>
       <div class="dialogue__character-text">{{{text}}}</div>
